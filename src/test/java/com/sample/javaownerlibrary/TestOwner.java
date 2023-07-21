@@ -12,7 +12,7 @@ public class TestOwner{
 	
 	@Test
 	public void readProperties() {
-		//create instance 
+	//create an instance 
 	GeneralConfig  genralConfig= ConfigFactory.create(GeneralConfig.class);
 	url =genralConfig.baseUrl();
 	browser =genralConfig.browser();
@@ -22,6 +22,8 @@ public class TestOwner{
 	
 	
 	System.out.println(url);
+	System.out.println(browser);
+	System.out.println(headless);	
 	
 
 	}
